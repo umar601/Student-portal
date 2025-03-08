@@ -1,2 +1,2 @@
 # Student-portal
-student portal clone.
+student portal clone.Thid is made using html,css.
