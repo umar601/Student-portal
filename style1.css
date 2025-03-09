@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+
+    width:100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.sidebar{
+
+    width: 20%;
+    height: 125%;
+    background-color: rgb(51, 49, 49);
+    
+}
+
+
+.mainbody{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+  
+
+}
+
+.logo{
+    width: 100%;
+    height: 15%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#logoimage{
+
+    width: 80px;
+    height: 80px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 30px;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.links a{
+
+    text-decoration: none;
+    color: white;
+    margin-top: 40px;
+}
+
+
+.head{
+
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    /* background-color: chartreuse; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#hem{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.headdata{
+    display: flex;
+    padding: 0px 30px ;
+    cursor: pointer;
+
+}
+
+#Announcements{
+    padding: 0px 30px;
+}
+
+.cardsection{
+
+    width: 100%;
+    height: 60%;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 8px;
+    row-gap: 8px;
+    min-width: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    color: white;
+   
+
+
+}
+
+.cards{
+
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards p{
+
+    margin-top: 10px;
+}
+
+#card01{
+    background-color: rgb(76, 76, 223);
+}
+
+#card001{
+    background-color: rgb(59, 3, 110);
+}
+
+#card1{
+    background-color: rgb(75, 154, 228);
+}
+
+#card2{
+    background-color: rgb(54, 51, 51);
+}
+
+#card3{
+    background-color: #f7b924;
+}
+
+#card4{
+    background-color: rgb(130, 245, 130);
+}
+
+#card5{
+    background-color: rgb(88, 88, 185);
+}
+
+#card6{
+    background-color: rgb(90, 86, 86);
+}
+
+#card7{
+    background-color: rgb(77, 69, 69);
+}
+
+#card8{
+    background-color: rgb(37, 40, 245);
+}
+
+#card9{
+    background-color: rgb(68, 26, 71);
+}
+
+#card10{
+    background-color: rgb(224, 126, 45);
+}
+
+
+
+@media( max-width:1000px){
+
+    .sidebar{
+        height: 160%;
+    }
+
+    .cardsection{
+
+    height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,1fr);
+        column-gap: 8px;
+        row-gap: 8px;
+       /* background-color: red; */
+    
+    
+    }
+    .cards{
+
+    
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .cardsection{
+        /* background-color: pink; */
+        height: 150%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(12,1fr);
+        column-gap: 8px;
+        row-gap: 8px;
+    }
+
+    .cards{
+
+    
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+
+   
+
+    .sidebar{
+        
+        display: none;
+    }
+
+    .mainbody{
+        width: 100%;
+    }
+
+    .footer{
+        font-size: 0.8rem;
+    }
+
+
+
+
+}
+
+
+
+
+
+.bottom{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    /* background-color: rebeccapurple; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.timetable{
+
+    height: 35%;
+    width: 98%;
+    background-color: rgb(196, 191, 191);
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.footer{
+
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(36, 35, 35);
+    margin-top: 80px;
+    color: white;
+
+}
